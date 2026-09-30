@@ -13,9 +13,15 @@ class WaveHeader extends StatelessWidget {
       clipper: _WaveClipper(),
       child: Container(
         width: double.infinity,
-        color: PetoteColors.ardoise,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [PetoteColors.ardoise, PetoteColors.marine],
+          ),
+        ),
         padding: EdgeInsets.fromLTRB(
-            24, MediaQuery.of(context).padding.top + 24, 24, 56),
+            20, MediaQuery.of(context).padding.top + 28, 20, 60),
         child: child,
       ),
     );

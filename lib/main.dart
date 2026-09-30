@@ -18,9 +18,5 @@ class PetoteApp extends StatelessWidget {
       theme: construireTheme(),
       home: const HomePage(),
     );
-
-
-
-    
   }
 }
